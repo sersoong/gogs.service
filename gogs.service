@@ -9,7 +9,7 @@ User=*** # set the user for this service
 WorkingDirectory=/home/***/gogs # path to your gogs directory
 ExecStart=/home/***/gogs/gogs web # path to your gogs executioner
 ExecStop=/bin/kill -WINCH ${MAINPID}
-Restart=always
+Restart=on-failure
 Environment=USER=*** HOME=/home/*** # set the execute USER and HOME value to Environment
 
 [Install]
