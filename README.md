@@ -10,11 +10,12 @@ cd gogs.service
 
 **Edit the gogs.service file.Replace all \* with your setting value in the file.**
 
-**And copy it to /etc/systemd/system/.**
+**And copy it to ``/lib/systemd/system/``.**
 
 **Then Run**
 ```
 #sudo systemctl start gogs
+#sudo systemctl enable gogs
 ```
 **Or Stop with**
 ```
